@@ -1,24 +1,20 @@
-# README
+# Code Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Solution files are in 
+* `app/hightligh/highlight.rb`
+* `app/controllers/home_controller.rb`
+* `app/views/home/index.html.erb`
+* `app/javascript/index.js`
+* `app/javascript/application.js`
+* `app/assets/stylesheets/home.scss`
 
-Things you may want to cover:
+# Steps to get started
+
+* run `bundle install`
+
+* run `rails server`
+
+* View Application on `localhost:3000`
 
 * Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ 2.7.1
