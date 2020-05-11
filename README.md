@@ -4,8 +4,8 @@
 * `app/hightligh/highlight.rb`
 * `app/controllers/home_controller.rb`
 * `app/views/home/index.html.erb`
-* `app/javascript/index.js`
-* `app/javascript/application.js`
+* `app/javascript/packs/index.js`
+* `app/javascript/packs/application.js`
 * `app/assets/stylesheets/home.scss`
 
 # Steps to get started
