@@ -30,6 +30,5 @@ class HomeController < ApplicationController
     }]
     getParagraphClass = Highlight.new(content, highlights).call
     @getParagraph = getParagraphClass.html_safe
-    # debugger
   end
 end

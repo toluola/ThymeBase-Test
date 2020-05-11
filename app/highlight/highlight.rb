@@ -38,11 +38,17 @@ class Highlight
     if highlighted_word.include? "\n\n"
       new_line = highlighted_word.split("\n\n")
       new_line.each { |s|
-      new_span = "<span id=\"#{genarate_id}\" style=\"background:#{generate_colour};\" class=\"highlight\" comment=\"#{p[:comment]}\">#{s}</span>" 
+      new_span = "<span id=\"#{genarate_id}\" style=\"background:#{generate_colour};\" 
+                  class=\"highlight\" comment=\"#{p[:comment]}\" 
+                  onmouseover=\"createTip(this)\" onmouseout=\"cancelTip(this)\">#{s}
+                  </span>" 
       @span_array.push({words: s, span: new_span})
       }
     else 
-      span = "<span id=\"#{genarate_id}\" style=\"background:#{generate_colour};\" class=\"highlight\" comment=\"#{p[:comment]}\">#{highlighted_word}</span>"
+      span = "<span id=\"#{genarate_id}\" style=\"background:#{generate_colour};\" 
+      class=\"highlight\" comment=\"#{p[:comment]}\"
+      onmouseover=\"createTip(this)\" onmouseout=\"cancelTip(this)\">#{highlighted_word}
+      </span>"
       @span_array.push({words: highlighted_word, span: span}) 
     end
     }
